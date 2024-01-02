@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
-const RammerheadJSMemCache = require('./classes/RammerheadJSMemCache.js');
-const RammerheadJSFileCache = require('./classes/RammerheadJSFileCache.js');
+const RammerheadJSMemCache = require('./src/classes/RammerheadJSMemCache.js');
+const RammerheadJSFileCache = require('./src/classes/RammerheadJSFileCache.js');
 
 const enableWorkers = os.cpus().length !== 1;
 
