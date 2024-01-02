@@ -103,13 +103,18 @@
         };
     }
 
-    var api = {
-        needpassword(callback) {
-            get('/needpassword', value => callback(value === 'true'));
-        },
-        newsession(callback) {
-            get('/newsession', callback);
-        },
+var api = {
+  needpassword(callback) {
+    // Directly set the value instead of making a GET request
+    callback(true);
+  },
+
+  newsession(callback) {
+    // Directly set the value instead of making a GET request
+    callback("your_new_session_value");
+  },
+};
+
         editsession(id, httpProxy, enableShuffling, callback) {
             get(
                 '/editsession?id=' +
