@@ -114,7 +114,7 @@ var api = {
     callback("your_new_session_value");
   },
 };
-
+});
         editsession(id, httpProxy, enableShuffling, callback) {
             get(
                 '/editsession?id=' +
